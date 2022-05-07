@@ -1,21 +1,21 @@
 package com.br.javasouls;
 
-public class Personagem {
-    public String nome;
-    public int forca;
-    public int vigor;
-    public int destreza;
-    public int inteligencia;
+public class Personagem extends Atributos{
+    private String nome;
+    private int forca;
+    private int vigor;
+    private int destreza;
+    private int inteligencia;
 
     public String getAlinhamento() {
         return alinhamento;
     }
 
-    public void setAlinhamento(String alinhamento) {
-        this.alinhamento = alinhamento;
-    }
+    //public void setAlinhamento(String alinhamento) {
+      //  this.alinhamento = alinhamento;
+    //}
 
-    public String alinhamento;
+    //public String alinhamento;
 
     public String getNome() {
         return nome;
@@ -64,21 +64,14 @@ public class Personagem {
         this.inteligencia = inteligencia;
         System.out.println("Sua Inteligência é " + inteligencia);
     }
-    public static void main(String[] args) {
-        Personagem heroi = new Personagem();
-        heroi.setNome("John Darksoul");
-        heroi.setForca(3);
-        heroi.setVigor(3);
-        heroi.setDestreza(3);
-        heroi.setInteligencia(3);
-        heroi.setAlinhamento("bom");
+    //public static void main(String[] args) {
+        //Personagem heroi = new Personagem();
+        //heroi.setNome("John Darksoul");
+        //heroi.setForca(3);
+        //heroi.setVigor(3);
+        //heroi.setDestreza(3);
+        //heroi.setInteligencia(3);
+        //heroi.setAlinhamento("bom");
 
-        Personagem caveira = new Personagem();
-        caveira.setNome("Caveirudo");
-        caveira.setForca(1);
-        caveira.setVigor(1);
-        caveira.setDestreza(1);
-        caveira.setInteligencia(1);
-        caveira.setAlinhamento("mau");
-    }
+    //}
 }
